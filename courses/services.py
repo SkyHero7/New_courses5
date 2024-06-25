@@ -1,7 +1,7 @@
 from django.core.cache import cache
 
 from courses.models import Blogpost
-from Config.settings import CACHE_ENABLED
+from config.settings import CACHE_ENABLED
 
 
 def get_cache_blogposts():

@@ -1,8 +1,8 @@
 from django.contrib import admin
 
-from users.models import User
+from .models import User
 
-default_app_config = 'users.apps.UsersConfig'
+default_app_config = 'new_users.apps.NewUsersConfig'
 # Register your models here.
 @admin.register(User)
 class AdminUser(admin.ModelAdmin):

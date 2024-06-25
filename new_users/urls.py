@@ -1,12 +1,12 @@
 from django.urls import path
 from django.views.generic import TemplateView
 
-from .apps import UsersConfig
+from .apps import NewUsersConfig
 from .views import LoginView, LogoutView, RegisterView, get_verification, RegisterInfo, UserListView, \
     UserUpdateView, UserDetailView, UserDeleteView, PasswordResetView, UserPasswordChangeView, PasswordResetDoneView, \
     PasswordResetCompleteView, MyPasswordResetConfirmView, UserCustomUpdateView
 
-app_name = UsersConfig.name
+app_name = NewUsersConfig.name
 
 urlpatterns = [
     path('', LoginView.as_view(), name='login'),
