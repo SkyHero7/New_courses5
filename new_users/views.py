@@ -13,8 +13,8 @@ from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, TemplateView, ListView, UpdateView, DetailView, DeleteView
 
 from mailing.views import BaseContextMixin
-from .forms import LoginViewForm, UserRegisterForm, UserUpdateForm, UserPasswordForm, UserUpdateCustomForm
-from .models import User
+from new_users.forms import LoginViewForm, UserRegisterForm, UserUpdateForm, UserPasswordForm, UserUpdateCustomForm
+from new_users.models import User
 
 
 class LoginView(BaseContextMixin, BaseLoginView):

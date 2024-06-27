@@ -1,8 +1,8 @@
 from django.urls import path
 from django.views.generic import TemplateView
 
-from .apps import NewUsersConfig
-from .views import LoginView, LogoutView, RegisterView, get_verification, RegisterInfo, UserListView, \
+from new_users.apps import NewUsersConfig
+from new_users.views import LoginView, LogoutView, RegisterView, get_verification, RegisterInfo, UserListView, \
     UserUpdateView, UserDetailView, UserDeleteView, PasswordResetView, UserPasswordChangeView, PasswordResetDoneView, \
     PasswordResetCompleteView, MyPasswordResetConfirmView, UserCustomUpdateView
 

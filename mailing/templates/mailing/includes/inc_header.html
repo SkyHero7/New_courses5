@@ -11,7 +11,7 @@
         <a href="{% url 'mailing:log_list' %}" class="p-2 btn btn-outline-success">Отчеты</a>
         {% endif %}
         {% endif %}
-        <a href="{% url 'blog:post_list' %}" class="p-2 btn btn-outline-success">Блог</a>
+        <a href="{% url 'courses:post_list' %}" class="p-2 btn btn-outline-success">Блог</a>
 
         {% if user.is_authenticated %}
             {% if user.is_superuser or user.groups.exists %}
